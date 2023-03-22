@@ -22,7 +22,7 @@ K_dict = {"多云": 0.9, "阴": 0.8, "小雨": 0.7, "中雨": 0.5, "大雨": 0.4
 # 北京时间
 time_bj = datetime.datetime.today() + datetime.timedelta(hours=8)
 now = time_bj.strftime("%Y-%m-%d %H:%M:%S")
-headers = {'User-Agent': 'MiFit/5.3.0 (iPhone; iOS 14.7.1; Scale/3.00)'}
+headers = {'User-Agent': 'MiFit/5.5.1 (iPhone; iOS 15.1; Scale/2.00)'}
 
 
 # 获取区域天气情况
@@ -120,7 +120,7 @@ def login(user, password):
         url1 = "https://api-user.huami.com/registrations/" + user + "/tokens"
     headers = {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2"
+         "User-Agent": "network/wifi;Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1"
     }
     data1 = {
         "client_id": "HuaMi",
